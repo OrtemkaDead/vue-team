@@ -1,5 +1,9 @@
 <template>
-  <header class="header"><slot></slot></header>
+  <header class="header">
+    <slot name="left"></slot>
+    <slot name="center"></slot>
+    <slot name="right"></slot>
+  </header>
 </template>
 
 <script>

@@ -5,14 +5,15 @@
 </template>
 
 <script>
-  import Home from '@/components/Home.vue'
-  import Dialogs from '@/components/Dialogs.vue'
-  import Profile from '@/components/Profile.vue'
-  import Liked from '@/components/Liked.vue'
+  import Home from '@/views/Home.vue'
+  import Dialogs from '@/views/Dialogs.vue'
+  import Profile from '@/views/Profile.vue'
+  import Liked from '@/views/Liked.vue'
+  import Message from '@/views/Message.vue'
   export default {
     name: 'App',
     components: {
-      Dialogs, Home, Profile, Liked,
+      Dialogs, Home, Profile, Liked, Message,
     }
   }
 </script>

@@ -8,23 +8,23 @@ export default new Router({
     routes: [
         {
             path: '/home',
-            component: () => import('./components/Home.vue')
+            component: () => import('./views/Home.vue')
         },
         {
             path: '/dialogs',
-            component: () => import('./components/Dialogs.vue')
+            component: () => import('./views/Dialogs.vue')
         },
         {
             path: '/profile',
-            component: () => import('./components/Profile.vue')
+            component: () => import('./views/Profile.vue')
         },
         {
             path: '/liked',
-            component: () => import('./components/Liked.vue')
+            component: () => import('./views/Liked.vue')
         },
         {
             path: '/message',
-            component: () => import('./components/Message.vue')
+            component: () => import('./views/Message.vue')
         },
     ]
 })

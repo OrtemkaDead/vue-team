@@ -1,8 +1,12 @@
 <template>
   <div class="home">
     <Header>
-      <router-link to="/liked"><img class="title" src="@/assets/img/like-icon.svg" alt=""></router-link>
-      <img class="avatar" src="@/assets/img/avatar.png" alt="">
+      <template v-slot:left>
+        <router-link to="/liked"><img class="title" src="@/assets/img/like-icon.svg" alt=""></router-link>
+      </template>
+      <template v-slot:right>
+        <img class="avatar"  src="@/assets/img/avatar.png" alt="">
+      </template>
     </Header>
 
     <div class="content">
