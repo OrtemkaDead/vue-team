@@ -1,5 +1,5 @@
 <template>
-  <header><slot></slot></header>
+  <header class="header"><slot></slot></header>
 </template>
 
 <script>
@@ -11,7 +11,7 @@
 </script>
 
 <style lang="scss">
-  header {
+  .header {
     @include pos-fixed(0, unset, $head-h);
     @include flexing(space-between);
     padding: $main-p;
@@ -28,6 +28,33 @@
 
     .avatar {
       @include avatar(36px);
+    }
+
+    &__back-arr {
+      display: block;
+      width: 18px;
+      height: 2px;
+      position: relative;
+
+      background: #fff;
+
+      & span:before {
+        @include pseudo;
+        width: 10px;
+        height: 2px;
+        transform: rotate(-45deg);
+        transform-origin: left bottom;
+        background: #fff;
+      }
+
+      & span:after {
+        @include pseudo;
+        width: 10px;
+        height: 2px;
+        transform: rotate(45deg);
+        transform-origin: left top;
+        background: #fff;
+      }
     }
   }
 </style>

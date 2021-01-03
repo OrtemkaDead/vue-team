@@ -18,5 +18,9 @@ export default new Router({
             path: '/profile',
             component: () => import('./components/Profile.vue')
         },
+        {
+            path: '/liked',
+            component: () => import('./components/Liked.vue')
+        },
     ]
 })
