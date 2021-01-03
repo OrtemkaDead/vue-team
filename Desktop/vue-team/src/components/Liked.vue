@@ -56,6 +56,7 @@
         </svg>
       </router-link>
     </Nav>
+
   </div>
 </template>
 
@@ -131,7 +132,6 @@
         bottom: 0;
         left: 0;
       }
-
 
       &__text {
         position: absolute;

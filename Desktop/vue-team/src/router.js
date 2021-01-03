@@ -22,5 +22,9 @@ export default new Router({
             path: '/liked',
             component: () => import('./components/Liked.vue')
         },
+        {
+            path: '/message',
+            component: () => import('./components/Message.vue')
+        },
     ]
 })

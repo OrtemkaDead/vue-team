@@ -7,69 +7,13 @@
 
     <div class="content">
 
-      <a href="#" class="dialog">
+      <router-link to="/message" class="dialog">
         <img class="dialog__avatar" src="@/assets/img/avatar.png" alt="">
         <div class="dialog__text">
           <div class="dialog__name">Артес</div>
           <div class="dialog__content">вы: За моего отца!</div>
         </div>
-      </a>
-      <a href="#" class="dialog">
-        <img class="dialog__avatar" src="@/assets/img/avatar.png" alt="">
-        <div class="dialog__text">
-          <div class="dialog__name">Артес</div>
-          <div class="dialog__content">вы: За моего отца!</div>
-        </div>
-      </a>
-      <a href="#" class="dialog">
-        <img class="dialog__avatar" src="@/assets/img/avatar.png" alt="">
-        <div class="dialog__text">
-          <div class="dialog__name">Артес</div>
-          <div class="dialog__content">вы: За моего отца!</div>
-        </div>
-      </a>
-      <a href="#" class="dialog">
-        <img class="dialog__avatar" src="@/assets/img/avatar.png" alt="">
-        <div class="dialog__text">
-          <div class="dialog__name">Артес</div>
-          <div class="dialog__content">вы: За моего отца!</div>
-        </div>
-      </a>
-      <a href="#" class="dialog">
-        <img class="dialog__avatar" src="@/assets/img/avatar.png" alt="">
-        <div class="dialog__text">
-          <div class="dialog__name">Артес</div>
-          <div class="dialog__content">вы: За моего отца!</div>
-        </div>
-      </a>
-      <a href="#" class="dialog">
-        <img class="dialog__avatar" src="@/assets/img/avatar.png" alt="">
-        <div class="dialog__text">
-          <div class="dialog__name">Артес</div>
-          <div class="dialog__content">вы: За моего отца!</div>
-        </div>
-      </a>
-      <a href="#" class="dialog">
-        <img class="dialog__avatar" src="@/assets/img/avatar.png" alt="">
-        <div class="dialog__text">
-          <div class="dialog__name">Артес</div>
-          <div class="dialog__content">вы: За моего отца!</div>
-        </div>
-      </a>
-      <a href="#" class="dialog">
-        <img class="dialog__avatar" src="@/assets/img/avatar.png" alt="">
-        <div class="dialog__text">
-          <div class="dialog__name">Артес</div>
-          <div class="dialog__content">вы: За моего отца!</div>
-        </div>
-      </a>
-      <a href="#" class="dialog">
-        <img class="dialog__avatar" src="@/assets/img/avatar.png" alt="">
-        <div class="dialog__text">
-          <div class="dialog__name">Артес</div>
-          <div class="dialog__content">вы: За моего отца!</div>
-        </div>
-      </a>
+      </router-link>
 
     </div>
 
