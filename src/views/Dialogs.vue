@@ -11,39 +11,20 @@
 
     <div class="content">
 
-      <Dialog></Dialog>
+      <DialogItem></DialogItem>
 
     </div>
-
-    <Nav>
-      <router-link to="/home">
-        <svg class="icon">
-          <use xlink:href='#icon-homepage'></use>
-        </svg>
-      </router-link>
-      <router-link to="/dialogs">
-        <svg class="icon active">
-          <use xlink:href='#icon-message'></use>
-        </svg>
-      </router-link>
-      <router-link to="/profile">
-        <svg class="icon">
-          <use xlink:href='#icon-profile'></use>
-        </svg>
-      </router-link>
-    </Nav>
   </div>
 
 </template>
 
 <script>
   import Header from '@/components/Header.vue'
-  import Nav from '@/components/Nav.vue'
-  import Dialog from '@/components/Dialog.vue'
+  import DialogItem from '@/components/DialogItem.vue'
 
   export default {
     components: {
-      Header, Nav, Dialog,
+      Header, DialogItem,
     }
   }
 </script>

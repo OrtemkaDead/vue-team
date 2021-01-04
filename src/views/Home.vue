@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
+  <div>
     <Header>
       <template v-slot:left>
-        <router-link to="/liked"><img class="title" src="@/assets/img/like-icon.svg" alt=""></router-link>
+        <router-link to="/liked"><like-icon /></router-link>
       </template>
       <template v-slot:right>
         <img class="avatar"  src="@/assets/img/avatar.png" alt="">
@@ -23,35 +23,24 @@
       <Gamers></Gamers>
 
       <div class="buttons">
-        <button><img src="@/assets/img/close-icon.svg" alt=""></button>
-        <button class="btn-big"><img src="@/assets/img/gamepad-icon.svg" alt=""></button>
-        <button><img src="@/assets/img/like-icon.svg" alt=""></button>
+        <button><close-icon /></button>
+        <button class="btn-big"><gamepad-icon /></button>
+        <button><like-icon /></button>
       </div>
 
     </div>
 
-    <Nav>
-      <router-link to="/home" class="icon">
-        <home-icon />
-      </router-link>
-      <router-link to="/dialogs">
-        <message-icon />
-      </router-link>
-      <router-link to="/profile" class="icon">
-        <user-icon />
-      </router-link>
-    </Nav>
   </div>
 </template>
 
 <script>
     import Header from '@/components/Header.vue'
-    import Nav from '@/components/Nav.vue'
     import Gamers from '@/components/Gamers.vue'
     import WelcomeText from '@/components/WelcomeText.vue'
-    import homeIcon from '@/assets/img/Icon-Main-Page.svg'
-    import messageIcon from '@/assets/img/message-icon.svg'
-    import userIcon from '@/assets/img/user-icon.svg'
+    // Icon
+    import likeIcon from '@/assets/img/like-icon.svg'
+    import closeIcon from '@/assets/img/close-icon.svg'
+    import gamepadIcon from '@/assets/img/gamepad-icon.svg'
 
     export default {
         data() {
@@ -63,7 +52,8 @@
             };
         },
         components: {
-            Header, Nav, Gamers, WelcomeText, homeIcon, messageIcon, userIcon
+            Header, Gamers, WelcomeText,
+            likeIcon, closeIcon, gamepadIcon,
         }
     }
 </script>

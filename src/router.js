@@ -7,7 +7,7 @@ export default new Router({
     mode: "history",
     routes: [
         {
-            path: '/home',
+            path: '/',
             component: () => import('./views/Home.vue')
         },
         {
@@ -23,8 +23,8 @@ export default new Router({
             component: () => import('./views/Liked.vue')
         },
         {
-            path: '/message',
-            component: () => import('./views/Message.vue')
+            path: '/dialog',
+            component: () => import('./views/Dialog.vue')
         },
     ]
 })

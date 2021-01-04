@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/message" class="dialog">
+  <router-link to="/dialog" class="dialog">
     <img class="dialog__avatar" src="@/assets/img/avatar.png" alt="">
     <div class="dialog__text">
       <div class="dialog__name">Артес</div>

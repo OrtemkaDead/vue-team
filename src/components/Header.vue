@@ -6,14 +6,6 @@
   </header>
 </template>
 
-<script>
-  export default {
-    components: {
-
-    }
-  }
-</script>
-
 <style lang="scss">
   .header {
     @include pos-fixed(0, unset, $head-h);

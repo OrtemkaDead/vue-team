@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <router-view />
+
+    <Nav></Nav>
   </div>
 </template>
 
@@ -9,11 +11,14 @@
   import Dialogs from '@/views/Dialogs.vue'
   import Profile from '@/views/Profile.vue'
   import Liked from '@/views/Liked.vue'
-  import Message from '@/views/Message.vue'
+  import Dialog from '@/views/Dialog.vue'
+  import Nav from '@/components/Nav.vue'
+
   export default {
     name: 'App',
     components: {
-      Dialogs, Home, Profile, Liked, Message,
+        Home, Liked, Dialogs, Dialog, Profile,
+        Nav,
     }
   }
 </script>
@@ -34,7 +39,6 @@
   ::-webkit-scrollbar {
     width: 0;
   }
-
   body {
     font-family: "Open Sans", sans-serif;
     font-weight: $fw;
