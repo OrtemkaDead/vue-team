@@ -21,21 +21,7 @@
 
       <button class="profile-btn"><a href="#">Редактировать</a></button>
 
-      <div class="preferred-games">
-        <div class="preferred-games__title">Предпочитаемые игры</div>
-        <div class="profile-games">
-
-          <img src="@/assets/img/avatar.png" alt="">
-          <img src="@/assets/img/avatar.png" alt="">
-          <img src="@/assets/img/avatar.png" alt="">
-          <img src="@/assets/img/avatar.png" alt="">
-          <img src="@/assets/img/avatar.png" alt="">
-          <img src="@/assets/img/avatar.png" alt="">
-          <img src="@/assets/img/avatar.png" alt="">
-          <img src="@/assets/img/avatar.png" alt="">
-
-        </div>
-      </div>
+      <PreferredGames></PreferredGames>
 
       <div class="stats-games">
         <div class="stats-games__title">Статистика по играм</div>
@@ -81,10 +67,11 @@
 <script>
     import Header from '@/components/Header.vue'
     import Nav from '@/components/Nav.vue'
+    import PreferredGames from '@/components/PreferredGames.vue'
 
     export default {
         components: {
-            Header, Nav,
+            Header, Nav, PreferredGames,
         }
     }
 </script>
