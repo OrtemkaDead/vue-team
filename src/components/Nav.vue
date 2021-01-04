@@ -34,14 +34,20 @@
     box-shadow: $main-shadow;
 
     object{pointer-events:none;}
+  }
 
-    .active {
+  .active {
+    svg {
       fill: #6476CC;
     }
   }
+
   .icon {
     max-width: 24px;
     max-height: 24px;
-    fill: #fff;
+
+    svg {
+      fill: #fff;
+    }
   }
 </style>
