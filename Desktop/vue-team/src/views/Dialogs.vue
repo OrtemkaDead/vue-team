@@ -11,13 +11,7 @@
 
     <div class="content">
 
-      <router-link to="/message" class="dialog">
-        <img class="dialog__avatar" src="@/assets/img/avatar.png" alt="">
-        <div class="dialog__text">
-          <div class="dialog__name">Артес</div>
-          <div class="dialog__content">вы: За моего отца!</div>
-        </div>
-      </router-link>
+      <Dialog></Dialog>
 
     </div>
 
@@ -45,10 +39,11 @@
 <script>
   import Header from '@/components/Header.vue'
   import Nav from '@/components/Nav.vue'
+  import Dialog from '@/components/Dialog.vue'
 
   export default {
     components: {
-      Header, Nav,
+      Header, Nav, Dialog,
     }
   }
 </script>
@@ -70,31 +65,6 @@
     &::-webkit-scrollbar-thumb {
       background: linear-gradient(to bottom, #9b51e0, #6476cc);
       border-radius: 10px;
-    }
-  }
-
-  .dialog {
-    @include flexing(unset);
-    margin-bottom: 16px;
-
-    &__avatar {
-      @include avatar(48px, 12px);
-    }
-
-    &__text {
-      white-space: nowrap;
-      overflow: hidden;
-    }
-
-    &__content {
-      font-size: 14px;
-      opacity: .5;
-      text-overflow: ellipsis;
-      overflow: hidden;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
     }
   }
 </style>
