@@ -31,20 +31,14 @@
     </div>
 
     <Nav>
-      <router-link to="/home">
-        <svg class="icon active">
-          <use xlink:href='#icon-homepage'></use>
-        </svg>
+      <router-link to="/home" class="icon">
+        <home-icon />
       </router-link>
       <router-link to="/dialogs">
-        <svg class="icon">
-          <use xlink:href='#icon-message'></use>
-        </svg>
+        <message-icon />
       </router-link>
-      <router-link to="/profile">
-        <svg class="icon">
-          <use xlink:href='#icon-profile'></use>
-        </svg>
+      <router-link to="/profile" class="icon">
+        <user-icon />
       </router-link>
     </Nav>
   </div>
@@ -55,6 +49,9 @@
     import Nav from '@/components/Nav.vue'
     import Gamers from '@/components/Gamers.vue'
     import WelcomeText from '@/components/WelcomeText.vue'
+    import homeIcon from '@/assets/img/Icon-Main-Page.svg'
+    import messageIcon from '@/assets/img/message-icon.svg'
+    import userIcon from '@/assets/img/user-icon.svg'
 
     export default {
         data() {
@@ -66,7 +63,7 @@
             };
         },
         components: {
-            Header, Nav, Gamers, WelcomeText,
+            Header, Nav, Gamers, WelcomeText, homeIcon, messageIcon, userIcon
         }
     }
 </script>
