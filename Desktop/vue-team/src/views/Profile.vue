@@ -1,8 +1,12 @@
 <template>
   <div class="profile">
     <Header>
-      <div class="title">ID6566777</div>
-      <img class="avatar" src="@/assets/img/avatar.png" alt="">
+      <template v-slot:left>
+        <div class="title">ID6566777</div>
+      </template>
+      <template v-slot:right>
+        <img class="avatar" src="@/assets/img/avatar.png" alt="">
+      </template>
     </Header>
 
     <div class="content">

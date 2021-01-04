@@ -10,36 +10,24 @@
     </Header>
 
     <div class="content">
-      <div class="welcome">
-        <div class="welcome__text">Привет, Пользователь!</div>
-        <div class="welcome__big-text">Время оценивать</div>
-      </div>
 
-      <div class="gamers">
+      <WelcomeText>
+        <template v-slot:suptitle>
+          <div class="welcome__suptitle">{{ welcome.SupTitle }}</div>
+        </template>
+        <template v-slot:title>
+          <div class="welcome__title">{{ welcome.Title }}</div>
+        </template>
+      </WelcomeText>
 
-        <div class="account-gamers">
-          <img class="account-gamers__avatar" src="@/assets/img/user-img.jpg" alt="">
-          <div class="account-gamers__text">
-            <div class="account-gamers__name">Артес</div>
-            <div class="account-gamers__games">WoW</div>
-          </div>
-        </div>
-
-        <div class="gamers-info">
-          <div class="gamers-info__text">526 часов</div>
-          <div class="gamers-info__text">80% точность</div>
-          <div class="gamers-info__text">1.2 КД</div>
-          <div class="gamers-info__text">Дискорд есть</div>
-
-        </div>
-
-      </div>
+      <Gamers></Gamers>
 
       <div class="buttons">
         <button><img src="@/assets/img/close-icon.svg" alt=""></button>
         <button class="btn-big"><img src="@/assets/img/gamepad-icon.svg" alt=""></button>
         <button><img src="@/assets/img/like-icon.svg" alt=""></button>
       </div>
+
     </div>
 
     <Nav>
@@ -65,10 +53,20 @@
 <script>
     import Header from '@/components/Header.vue'
     import Nav from '@/components/Nav.vue'
+    import Gamers from '@/components/Gamers.vue'
+    import WelcomeText from '@/components/WelcomeText.vue'
 
     export default {
+        data() {
+            return {
+                welcome: {
+                    SupTitle: "Привет, пользователь!",
+                    Title: "Время оценивать",
+                },
+            };
+        },
         components: {
-            Header, Nav,
+            Header, Nav, Gamers, WelcomeText,
         }
     }
 </script>
@@ -82,86 +80,6 @@
     //Решение проблемы с тенью
     margin: unset;
     padding: 0 $main-p;
-  }
-
-  .welcome {
-    font-weight: 400;
-
-    &__text {
-      font-size: 12px;
-      opacity: .5;
-    }
-    &__big-text {
-      font-size: 24px;
-    }
-  }
-
-  .gamers {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-
-    margin: 20px 0;
-
-    font-weight: 400;
-
-    border-radius: 16px;
-    background: $content-bg;
-    box-shadow: $main-shadow;
-
-    .account-gamers {
-      flex-grow: 1;
-      position: relative;
-
-      &__avatar {
-        border-top-left-radius: 16px; border-top-right-radius: 16px;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        object-fit: cover;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-      }
-
-      &__text {
-        position: absolute;
-        bottom: 16px;
-        left: 16px;
-      }
-
-      &__name {
-        font-size: 18px;
-      }
-
-      &__games {
-        font-size: 14px;
-        opacity: .5;
-      }
-
-      &__liked {
-        position: absolute;
-        top: 16px;
-        right: 16px;
-      }
-    }
-
-    .gamers-info {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 24px 16px 16px;
-
-      &__text {
-        width: 50%;
-        margin-bottom: 10px;
-      }
-    }
-
-    &--liked {
-      min-width: 100%;
-      margin-right: 24px;
-    }
   }
 
   .buttons {

@@ -1,8 +1,12 @@
 <template>
   <div class="dialogs">
     <Header>
-      <div class="title">Диалоги</div>
-      <img class="avatar" src="@/assets/img/avatar.png" alt="">
+      <template v-slot:left>
+        <div class="title">Диалоги</div>
+      </template>
+      <template v-slot:right>
+        <img class="avatar" src="@/assets/img/avatar.png" alt="">
+      </template>
     </Header>
 
     <div class="content">

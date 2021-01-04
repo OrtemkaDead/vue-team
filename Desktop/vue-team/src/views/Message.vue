@@ -9,14 +9,18 @@
     </svg>
 
     <Header>
-      <router-link class="header__back-arr" to="/dialogs"><span></span></router-link>
-      <div class="header__content">
-        <div class="header__text">
-          <div class="header__title">Диалоги</div>
-          <div class="header__subtitle">Диалоги</div>
+      <template v-slot:left>
+        <router-link class="header__back-arr" to="/dialogs"><span></span></router-link>
+      </template>
+      <template v-slot:right>
+        <div class="header__content">
+          <div class="header__text">
+            <div class="header__title">Диалоги</div>
+            <div class="header__subtitle">Диалоги</div>
+          </div>
+          <img class="avatar" src="@/assets/img/avatar.png" alt="">
         </div>
-        <img class="avatar" src="@/assets/img/avatar.png" alt="">
-      </div>
+      </template>
     </Header>
 
     <div class="content">
