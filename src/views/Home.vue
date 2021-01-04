@@ -5,7 +5,7 @@
         <router-link to="/liked"><like-icon /></router-link>
       </template>
       <template v-slot:right>
-        <img class="avatar"  src="@/assets/img/avatar.png" alt="">
+        <Avatar36></Avatar36>
       </template>
     </Header>
 
@@ -13,20 +13,16 @@
 
       <WelcomeText>
         <template v-slot:suptitle>
-          <div class="welcome__suptitle">{{ welcome.SupTitle }}</div>
+          <Text12>Привет, пользователь!</Text12>
         </template>
         <template v-slot:title>
-          <div class="welcome__title">{{ welcome.Title }}</div>
+          <Title>Время оценивать</Title>
         </template>
       </WelcomeText>
 
-      <Gamers></Gamers>
+       <Gamers></Gamers>
 
-      <div class="buttons">
-        <button><close-icon /></button>
-        <button class="btn-big"><gamepad-icon /></button>
-        <button><like-icon /></button>
-      </div>
+      <Buttons></Buttons>
 
     </div>
 
@@ -37,23 +33,19 @@
     import Header from '@/components/Header.vue'
     import Gamers from '@/components/Gamers.vue'
     import WelcomeText from '@/components/WelcomeText.vue'
-    // Icon
+    import Avatar36 from '@/components/Avatar36.vue'
+    import Title from '@/components/Title.vue'
+    import Text12 from '@/components/Text12.vue'
+    import Buttons from '@/components/Buttons.vue'
+
+    //Icon
     import likeIcon from '@/assets/img/like-icon.svg'
-    import closeIcon from '@/assets/img/close-icon.svg'
-    import gamepadIcon from '@/assets/img/gamepad-icon.svg'
 
     export default {
-        data() {
-            return {
-                welcome: {
-                    SupTitle: "Привет, пользователь!",
-                    Title: "Время оценивать",
-                },
-            };
-        },
         components: {
-            Header, Gamers, WelcomeText,
-            likeIcon, closeIcon, gamepadIcon,
+            Header, Gamers, WelcomeText, Avatar36, Title, Text12, Buttons,
+
+            likeIcon,
         }
     }
 </script>
@@ -67,38 +59,5 @@
     //Решение проблемы с тенью
     margin: unset;
     padding: 0 $main-p;
-  }
-
-  .buttons {
-    @include flexing(space-around);
-    width: 250px;
-    margin: 0 auto;
-
-    button {
-      @include flexing(center);
-      width: 40px; height: 40px;
-
-      border-radius: 50%;
-      background: $content-bg;
-      box-shadow: $main-shadow;
-
-      &.btn-big {
-        width: 48px; height: 48px;
-        background: radial-gradient(circle, rgba(100,118,204,1) 0%, rgba(155,81,224,1) 100%);
-        // background: linear-gradient(to right, #9B51E0,#6476CC);
-      }
-
-      &:first-child {
-        background: linear-gradient(90deg, rgba(185, 43, 39, 1) 30%, rgba(21, 101, 192, 1) 100%);
-        background-size: 300% 300%;
-        animation: gradient 10s ease infinite;
-      }
-
-      &:last-child {
-        background: linear-gradient(90deg, rgba(21, 101, 192, 1) 30%, rgba(185, 43, 39, 1) 100%);
-        background-size: 300% 300%;
-        animation: gradient 10s ease infinite;
-      }
-    }
   }
 </style>

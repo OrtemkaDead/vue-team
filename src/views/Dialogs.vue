@@ -5,7 +5,7 @@
         <div class="title">Диалоги</div>
       </template>
       <template v-slot:right>
-        <img class="avatar" src="@/assets/img/avatar.png" alt="">
+        <Avatar36></Avatar36>
       </template>
     </Header>
 
@@ -21,10 +21,11 @@
 <script>
   import Header from '@/components/Header.vue'
   import DialogItem from '@/components/DialogItem.vue'
+  import Avatar36 from '@/components/Avatar36.vue'
 
   export default {
     components: {
-      Header, DialogItem,
+      Header, DialogItem, Avatar36,
     }
   }
 </script>

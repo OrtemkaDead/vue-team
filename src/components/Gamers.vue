@@ -66,12 +66,6 @@
         font-size: 14px;
         opacity: .5;
       }
-
-      &__liked {
-        position: absolute;
-        top: 16px;
-        right: 16px;
-      }
     }
 
     .gamers-info {
@@ -83,11 +77,6 @@
         width: 50%;
         margin-bottom: 10px;
       }
-    }
-
-    &--liked {
-      min-width: 100%;
-      margin-right: 24px;
     }
   }
 </style>

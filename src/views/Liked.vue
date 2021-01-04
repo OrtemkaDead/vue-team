@@ -5,7 +5,7 @@
         <router-link class="header__back-arr" to="/"><span></span></router-link>
       </template>
       <template v-slot:right>
-        <img class="avatar" src="@/assets/img/avatar.png" alt="">
+        <Avatar36></Avatar36>
       </template>
     </Header>
 
@@ -13,16 +13,15 @@
 
       <WelcomeText>
         <template v-slot:title>
-          <div class="welcome__title">{{ welcome.Title }}</div>
+          <Title>Твой выбор</Title>
         </template>
       </WelcomeText>
 
       <div class="liked">
-
         <div class="liked__item">
           <Gamers>
             <template v-slot:icon-liked>
-              <div class="account-gamers__liked"><img src="@/assets/img/gamepad-icon.svg" alt=""></div>
+              <gamepad-icon class="icon-liked" />
             </template>
           </Gamers>
         </div>
@@ -34,19 +33,19 @@
 
 <script>
     import Header from '@/components/Header.vue'
-    import Gamers from '@/components/Gamers.vue'
     import WelcomeText from '@/components/WelcomeText.vue'
+    import Avatar36 from '@/components/Avatar36.vue'
+    import Title from '@/components/Title.vue'
+    import Gamers from '@/components/Gamers.vue'
+
+    //Icon
+    import gamepadIcon from '@/assets/img/gamepad-icon.svg'
 
     export default {
-        data() {
-            return {
-                welcome: {
-                    Title: "Твой выбор",
-                },
-            };
-        },
         components: {
-            Header, Gamers, WelcomeText,
+            Header, WelcomeText, Avatar36, Gamers, Title,
+
+            gamepadIcon,
         }
     }
 </script>
@@ -58,6 +57,11 @@
     display: flex;
     flex-direction: column;
     padding: 0 $main-p;
+  }
+
+  .gamers {
+    min-width: 100%;
+    margin-right: 24px;
   }
 
   .liked {
@@ -76,8 +80,10 @@
     }
   }
 
-  .gamers {
-    min-width: 100%;
-    margin-right: 24px;
+  .icon-liked {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    fill: #6476CC;
   }
 </style>

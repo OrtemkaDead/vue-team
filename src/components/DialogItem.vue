@@ -1,6 +1,6 @@
 <template>
   <router-link to="/dialog" class="dialog">
-    <img class="dialog__avatar" src="@/assets/img/avatar.png" alt="">
+    <DialogAvatar></DialogAvatar>
     <div class="dialog__text">
       <div class="dialog__name">Артес</div>
       <div class="dialog__content">вы: За моего отца!</div>
@@ -8,14 +8,21 @@
   </router-link>
 </template>
 
+<script>
+  import DialogAvatar from '@/components/DialogAvatar.vue'
+
+  export default {
+      components: {
+          DialogAvatar,
+      }
+  }
+</script>
+
 <style lang="scss" scoped>
   .dialog {
     @include flexing(unset);
     margin-bottom: 16px;
 
-    &__avatar {
-      @include avatar(48px, 12px);
-    }
 
     &__text {
       white-space: nowrap;

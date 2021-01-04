@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <router-link to="/" class="icon">
+    <router-link to="/" class="icon active">
       <home-icon />
     </router-link>
     <router-link to="/dialogs" class="icon">

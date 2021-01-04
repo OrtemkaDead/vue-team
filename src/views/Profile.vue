@@ -2,17 +2,17 @@
   <div class="profile">
     <Header>
       <template v-slot:left>
-        <div class="title">ID6566777</div>
+        <Title>ID6566777</Title>
       </template>
       <template v-slot:right>
-        <img class="avatar" src="@/assets/img/avatar.png" alt="">
+        <Avatar36></Avatar36>
       </template>
     </Header>
 
     <div class="content">
 
       <div class="profile-info">
-        <img class="profile-info__avatar" src="@/assets/img/avatar.png" alt="">
+        <Avatar56></Avatar56>
         <div class="profile-info__text">
           <div class="profile-info__name">Имя пользователя</div>
           <div class="profile-info__status">Статус пользователя</div>
@@ -50,10 +50,13 @@
 <script>
     import Header from '@/components/Header.vue'
     import PreferredGames from '@/components/PreferredGames.vue'
+    import Title from '@/components/Title.vue'
+    import Avatar36 from '@/components/Avatar36.vue'
+    import Avatar56 from '@/components/Avatar56.vue'
 
     export default {
         components: {
-            Header, PreferredGames,
+            Header, PreferredGames, Avatar36, Avatar56, Title,
         }
     }
 </script>
@@ -68,8 +71,8 @@
   .profile-info {
     @include flexing(unset);
 
-    &__avatar {
-      @include avatar(56px, 16px)
+    &__text {
+      margin-left: 16px;
     }
 
     &__name {
