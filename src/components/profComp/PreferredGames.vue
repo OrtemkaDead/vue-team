@@ -15,8 +15,8 @@
 </template>
 
 <script>
-  import Text16 from '@/components/Text16.vue'
-  import ProfileGames from '@/components/ProfileGames.vue'
+  import Text16 from '@/components/text/Text16.vue'
+  import ProfileGames from '@/components/profComp/ProfileGames.vue'
 
   export default {
       components: {

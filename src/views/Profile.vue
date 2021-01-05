@@ -36,13 +36,14 @@
 
 <script>
     import Header from '@/components/Header.vue'
-    import PreferredGames from '@/components/PreferredGames.vue'
-    import StatsGames from '@/components/StatsGames.vue'
-    import Title from '@/components/Title.vue'
-    import Avatar36 from '@/components/Avatar36.vue'
-    import Avatar56 from '@/components/Avatar56.vue'
-    import Text18 from '@/components/Text18.vue'
-    import Text12 from '@/components/Text12.vue'
+    import PreferredGames from '@/components/profComp/PreferredGames.vue'
+    import StatsGames from '@/components/profComp/StatsGames.vue'
+    import Title from '@/components/text/Title.vue'
+    import Text18 from '@/components/text/Text18.vue'
+    import Text12 from '@/components/text/Text12.vue'
+    import Avatar36 from '@/components/avatar/Avatar36.vue'
+    import Avatar56 from '@/components/avatar/Avatar56.vue'
+
 
     export default {
         components: {

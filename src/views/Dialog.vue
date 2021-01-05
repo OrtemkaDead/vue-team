@@ -2,7 +2,7 @@
   <div class="dialogs">
     <Header>
       <template v-slot:left>
-        <router-link to="/dialogs"><BackArr></BackArr></router-link>
+        <BackArr></BackArr>
       </template>
       <template v-slot:right>
         <div class="header__content">
@@ -51,7 +51,7 @@
 <script>
     import Header from '@/components/Header.vue'
     import BackArr from '@/components/BackArr.vue'
-    import Avatar36 from '@/components/Avatar36.vue'
+    import Avatar36 from '@/components/avatar/Avatar36.vue'
     //Icon
     import messageDispatchIcon from '@/assets/img/message-dispatch-icon.svg'
 

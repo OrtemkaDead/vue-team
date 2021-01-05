@@ -23,8 +23,8 @@
 </template>
 
 <script>
-  import Text14 from '@/components/Text14.vue'
-  import Text18 from '@/components/Text18.vue'
+  import Text14 from '@/components/text/Text14.vue'
+  import Text18 from '@/components/text/Text18.vue'
 
   export default {
       components: {

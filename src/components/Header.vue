@@ -34,7 +34,5 @@
       font-weight: 300;
       opacity: .5;
     }
-
-
   }
 </style>

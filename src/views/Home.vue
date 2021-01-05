@@ -33,9 +33,9 @@
     import Header from '@/components/Header.vue'
     import Gamers from '@/components/Gamers.vue'
     import WelcomeText from '@/components/WelcomeText.vue'
-    import Avatar36 from '@/components/Avatar36.vue'
-    import Title from '@/components/Title.vue'
-    import Text12 from '@/components/Text12.vue'
+    import Avatar36 from '@/components/avatar/Avatar36.vue'
+    import Title from '@/components/text/Title.vue'
+    import Text12 from '@/components/text/Text12.vue'
     import Buttons from '@/components/Buttons.vue'
 
     //Icon

@@ -21,8 +21,8 @@
 <script>
   import Header from '@/components/Header.vue'
   import DialogItem from '@/components/DialogItem.vue'
-  import Title from '@/components/Title.vue'
-  import Avatar36 from '@/components/Avatar36.vue'
+  import Title from '@/components/text/Title.vue'
+  import Avatar36 from '@/components/avatar/Avatar36.vue'
 
   export default {
     components: {

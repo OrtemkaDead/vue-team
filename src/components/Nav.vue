@@ -1,13 +1,13 @@
 <template>
   <nav>
-    <router-link to="/" class="icon active">
-      <home-icon />
+    <router-link to="/" >
+      <home-icon class="icon" />
     </router-link>
-    <router-link to="/dialogs" class="icon">
-      <message-icon />
+    <router-link to="/dialogs">
+      <message-icon class="icon" />
     </router-link>
-    <router-link to="/profile" class="icon">
-      <user-icon />
+    <router-link to="/profile">
+      <user-icon class="icon" />
     </router-link>
   </nav>
 </template>
@@ -20,7 +20,7 @@
     export default {
         components: {
             homeIcon, messageIcon, userIcon,
-        }
+        },
     }
 </script>
 
@@ -37,18 +37,12 @@
     object{pointer-events:none;}
   }
 
-  .active {
-    svg {
-      fill: #6476CC;
-    }
-  }
-
   .icon {
     max-width: 24px;
     max-height: 24px;
-
-    svg {
-      fill: #fff;
-    }
+    fill: #fff;
+  }
+  .active {
+    fill: #6476CC;
   }
 </style>

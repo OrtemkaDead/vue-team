@@ -1,6 +1,16 @@
 <template>
-  <div class="back-arr"><span></span></div>
+  <div class="back-arr" @click="goBack"><span></span></div>
 </template>
+
+<script>
+  export default {
+      methods: {
+          goBack() {
+              this.$router.go(-1)
+          }
+      }
+  }
+</script>
 
 <style lang="scss" scoped>
   .back-arr {

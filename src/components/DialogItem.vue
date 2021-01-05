@@ -9,9 +9,9 @@
 </template>
 
 <script>
-  import DialogAvatar from '@/components/DialogAvatar.vue'
-  import Text14 from '@/components/Text14.vue'
-  import Text16 from '@/components/Text16.vue'
+  import DialogAvatar from '@/components/avatar/DialogAvatar.vue'
+  import Text14 from '@/components/text/Text14.vue'
+  import Text16 from '@/components/text/Text16.vue'
 
   export default {
       components: {

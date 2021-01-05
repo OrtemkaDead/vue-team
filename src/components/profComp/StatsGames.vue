@@ -20,11 +20,12 @@
 </template>
 
 <script>
-  import ProfileGames from '@/components/ProfileGames.vue'
+  import ProfileGames from '@/components/profComp/ProfileGames.vue'
+  import Text16 from '@/components/text/Text16.vue'
 
   export default {
       components: {
-          ProfileGames,
+          ProfileGames, Text16,
       }
   }
 </script>
