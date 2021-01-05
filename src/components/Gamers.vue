@@ -2,12 +2,12 @@
   <div class="gamers">
 
     <div class="account-gamers">
-      <img class="account-gamers__avatar" src="@/assets/img/user-img.jpg" alt="">
+      <img class="account-gamers__img" src="@/assets/img/user-img.jpg" alt="">
       <slot name="icon-liked"></slot>
 
       <div class="account-gamers__text">
-        <div class="account-gamers__name">Артес</div>
-        <div class="account-gamers__games">WoW</div>
+        <Text18>Артес</Text18>
+        <Text14>WoW</Text14>
       </div>
     </div>
 
@@ -21,6 +21,17 @@
 
   </div>
 </template>
+
+<script>
+  import Text14 from '@/components/Text14.vue'
+  import Text18 from '@/components/Text18.vue'
+
+  export default {
+      components: {
+          Text14, Text18,
+      }
+  }
+</script>
 
 <style lang="scss" scoped>
   .gamers {
@@ -40,7 +51,7 @@
       flex-grow: 1;
       position: relative;
 
-      &__avatar {
+      &__img {
         border-top-left-radius: 16px; border-top-right-radius: 16px;
         width: 100%;
         height: 100%;
@@ -56,15 +67,6 @@
         position: absolute;
         bottom: 16px;
         left: 16px;
-      }
-
-      &__name {
-        font-size: 18px;
-      }
-
-      &__games {
-        font-size: 14px;
-        opacity: .5;
       }
     }
 

@@ -36,7 +36,10 @@
       &.btn-big {
         width: 48px; height: 48px;
         background: radial-gradient(circle, rgba(100,118,204,1) 0%, rgba(155,81,224,1) 100%);
-        // background: linear-gradient(to right, #9B51E0,#6476CC);
+
+        .icon {
+          min-width: 28px;
+        }
       }
 
       &:first-child {

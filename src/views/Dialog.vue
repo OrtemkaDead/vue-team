@@ -2,7 +2,7 @@
   <div class="dialogs">
     <Header>
       <template v-slot:left>
-        <router-link class="header__back-arr" to="/dialogs"><span></span></router-link>
+        <router-link to="/dialogs"><BackArr></BackArr></router-link>
       </template>
       <template v-slot:right>
         <div class="header__content">
@@ -10,7 +10,7 @@
             <div class="header__title">Диалоги</div>
             <div class="header__subtitle">Диалоги</div>
           </div>
-          <img class="avatar" src="@/assets/img/avatar.png" alt="">
+          <Avatar36></Avatar36>
         </div>
       </template>
     </Header>
@@ -39,22 +39,27 @@
       <div class="message__input-form">
         <input class="message__input" type="text" placeholder="Введите текст">
         <button class="message__btn">
-          <svg class="icon message-dispatch">
-            <use xlink:href='#icon-message-dispatch'></use>
-          </svg>
+          <message-dispatch-icon class="icon" />
         </button>
       </div>
 
     </div>
+
   </div>
 </template>
 
 <script>
     import Header from '@/components/Header.vue'
+    import BackArr from '@/components/BackArr.vue'
+    import Avatar36 from '@/components/Avatar36.vue'
+    //Icon
+    import messageDispatchIcon from '@/assets/img/message-dispatch-icon.svg'
 
     export default {
         components: {
-            Header,
+            Header, BackArr, Avatar36,
+
+            messageDispatchIcon,
         }
     }
 </script>
@@ -99,16 +104,13 @@
       font-weight: 300;
       opacity: .5;
     }
-
-    &__avatar {
-      @include avatar(36px);
-    }
   }
 
   .message {
     &__body {
       overflow-y: auto;
     }
+
     &__content { //Контент самого сообщения
       max-width: 60%;
       padding: 8px 16px;
@@ -136,7 +138,6 @@
         flex-wrap: wrap;
       }
     }
-
 
     &__input-form {
       display: flex;
@@ -167,7 +168,7 @@
       background-color: $content-bg;
       border-radius: 16px;
 
-      .message-dispatch {
+      .icon {
         fill: #fff;
         width: 18px;
         height: 20px;
@@ -175,7 +176,7 @@
         transition: fill .1s linear;
       }
 
-      &:active .message-dispatch{
+      &:active .icon{
         fill: #7B61FF;
       }
     }

@@ -2,7 +2,7 @@
   <div>
     <Header>
       <template v-slot:left>
-        <router-link class="header__back-arr" to="/"><span></span></router-link>
+        <router-link to="/"><BackArr></BackArr></router-link>
       </template>
       <template v-slot:right>
         <Avatar36></Avatar36>
@@ -28,11 +28,13 @@
       </div>
 
     </div>
+
   </div>
 </template>
 
 <script>
     import Header from '@/components/Header.vue'
+    import BackArr from '@/components/BackArr.vue'
     import WelcomeText from '@/components/WelcomeText.vue'
     import Avatar36 from '@/components/Avatar36.vue'
     import Title from '@/components/Title.vue'
@@ -43,7 +45,7 @@
 
     export default {
         components: {
-            Header, WelcomeText, Avatar36, Gamers, Title,
+            Header, WelcomeText, Avatar36, Gamers, Title, BackArr,
 
             gamepadIcon,
         }

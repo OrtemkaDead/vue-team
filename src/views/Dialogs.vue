@@ -2,7 +2,7 @@
   <div class="dialogs">
     <Header>
       <template v-slot:left>
-        <div class="title">Диалоги</div>
+        <Title>Диалоги</Title>
       </template>
       <template v-slot:right>
         <Avatar36></Avatar36>
@@ -21,11 +21,12 @@
 <script>
   import Header from '@/components/Header.vue'
   import DialogItem from '@/components/DialogItem.vue'
+  import Title from '@/components/Title.vue'
   import Avatar36 from '@/components/Avatar36.vue'
 
   export default {
     components: {
-      Header, DialogItem, Avatar36,
+      Header, DialogItem, Avatar36, Title,
     }
   }
 </script>

@@ -1,8 +1,7 @@
 <template>
   <div class="preferred-games">
-    <div class="preferred-games__title">Предпочитаемые игры</div>
-    <div class="profile-games">
-
+    <Text16>Предпочитаемые игры</Text16>
+    <ProfileGames>
       <img src="@/assets/img/avatar.png" alt="">
       <img src="@/assets/img/avatar.png" alt="">
       <img src="@/assets/img/avatar.png" alt="">
@@ -11,18 +10,17 @@
       <img src="@/assets/img/avatar.png" alt="">
       <img src="@/assets/img/avatar.png" alt="">
       <img src="@/assets/img/avatar.png" alt="">
-
-    </div>
+    </ProfileGames>
   </div>
 </template>
 
-<style lang="scss" scoped>
-  .profile-games {
-    display: flex;
-    overflow-x: auto;
-    padding: 16px 0 24px;
-    img {
-      @include avatar(48px, 12px);
-    }
+<script>
+  import Text16 from '@/components/Text16.vue'
+  import ProfileGames from '@/components/ProfileGames.vue'
+
+  export default {
+      components: {
+          Text16, ProfileGames,
+      }
   }
-</style>
+</script>

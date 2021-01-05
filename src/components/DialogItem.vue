@@ -2,18 +2,20 @@
   <router-link to="/dialog" class="dialog">
     <DialogAvatar></DialogAvatar>
     <div class="dialog__text">
-      <div class="dialog__name">Артес</div>
-      <div class="dialog__content">вы: За моего отца!</div>
+      <Text16>Денис, допустим</Text16>
+      <div class="dialog__content"><Text14>вы: За моего отца!</Text14></div>
     </div>
   </router-link>
 </template>
 
 <script>
   import DialogAvatar from '@/components/DialogAvatar.vue'
+  import Text14 from '@/components/Text14.vue'
+  import Text16 from '@/components/Text16.vue'
 
   export default {
       components: {
-          DialogAvatar,
+          DialogAvatar, Text14, Text16,
       }
   }
 </script>
@@ -23,15 +25,12 @@
     @include flexing(unset);
     margin-bottom: 16px;
 
-
     &__text {
       white-space: nowrap;
       overflow: hidden;
     }
 
     &__content {
-      font-size: 14px;
-      opacity: .5;
       text-overflow: ellipsis;
       overflow: hidden;
     }
