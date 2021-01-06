@@ -6,8 +6,8 @@
       <slot name="icon-liked"></slot>
 
       <div class="account-gamers__text">
-        <Text18>Артес</Text18>
-        <Text14>WoW</Text14>
+        <TextBig>Артес</TextBig>
+        <TextSmall>WoW</TextSmall>
       </div>
     </div>
 
@@ -23,12 +23,12 @@
 </template>
 
 <script>
-  import Text14 from '@/components/text/Text14.vue'
-  import Text18 from '@/components/text/Text18.vue'
+  import TextSmall from '@/components/text/TextSmall.vue'
+  import TextBig from '@/components/text/TextBig.vue'
 
   export default {
       components: {
-          Text14, Text18,
+          TextSmall, TextBig,
       }
   }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="preferred-games">
-    <Text16>Предпочитаемые игры</Text16>
-    <ProfileGames>
+    <TextMedium>Предпочитаемые игры</TextMedium>
+    <HorizontalList>
       <img src="@/assets/img/avatar.png" alt="">
       <img src="@/assets/img/avatar.png" alt="">
       <img src="@/assets/img/avatar.png" alt="">
@@ -10,17 +10,17 @@
       <img src="@/assets/img/avatar.png" alt="">
       <img src="@/assets/img/avatar.png" alt="">
       <img src="@/assets/img/avatar.png" alt="">
-    </ProfileGames>
+    </HorizontalList>
   </div>
 </template>
 
 <script>
-  import Text16 from '@/components/text/Text16.vue'
-  import ProfileGames from '@/components/profComp/ProfileGames.vue'
+  import TextMedium from '@/components/text/TextMedium.vue'
+  import HorizontalList from '@/components/HorizontalList.vue'
 
   export default {
       components: {
-          Text16, ProfileGames,
+          TextMedium, HorizontalList,
       }
   }
 </script>

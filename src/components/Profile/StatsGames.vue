@@ -1,14 +1,14 @@
 <template>
   <div class="stats-games">
 
-    <Text16>Статистика по играм</Text16>
-    <ProfileGames>
+    <TextMedium>Статистика по играм</TextMedium>
+    <HorizontalList>
       <button class="profile-games__item active" type="button" data-tab="#tab_1">Game</button>
       <button class="profile-games__item" type="button" data-tab="#tab_2">Game</button>
       <button class="profile-games__item" type="button" data-tab="#tab_3">Game</button>
       <button class="profile-games__item" type="button" data-tab="#tab_4">Game</button>
       <button class="profile-games__item" type="button" data-tab="#tab_5">Game</button>
-    </ProfileGames>
+    </HorizontalList>
 
     <div class="stats-games__content active" id="tab_1">
       <div class="stats-games__text">526 часов</div>
@@ -20,12 +20,12 @@
 </template>
 
 <script>
-  import ProfileGames from '@/components/profComp/ProfileGames.vue'
-  import Text16 from '@/components/text/Text16.vue'
+  import HorizontalList from '@/components/HorizontalList.vue'
+  import TextMedium from '@/components/text/TextMedium.vue'
 
   export default {
       components: {
-          ProfileGames, Text16,
+          HorizontalList, TextMedium,
       }
   }
 </script>

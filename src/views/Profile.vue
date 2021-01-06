@@ -14,9 +14,9 @@
       <div class="profile-info">
         <Avatar56></Avatar56>
         <div class="profile-info__text">
-          <Text18>Имя пользователя</Text18>
+          <TextBig>Имя пользователя</TextBig>
           <div class="profile-info__status">
-            <Text12>Статус пользователя</Text12>
+            <TextShallow>Статус пользователя</TextShallow>
           </div>
 
         </div>
@@ -36,11 +36,11 @@
 
 <script>
     import Header from '@/components/Header.vue'
-    import PreferredGames from '@/components/profComp/PreferredGames.vue'
-    import StatsGames from '@/components/profComp/StatsGames.vue'
+    import PreferredGames from '@/components/Profile/PreferredGames.vue'
+    import StatsGames from '@/components/Profile/StatsGames.vue'
     import Title from '@/components/text/Title.vue'
-    import Text18 from '@/components/text/Text18.vue'
-    import Text12 from '@/components/text/Text12.vue'
+    import TextBig from '@/components/text/TextBig.vue'
+    import TextShallow from '@/components/text/TextShallow.vue'
     import Avatar36 from '@/components/avatar/Avatar36.vue'
     import Avatar56 from '@/components/avatar/Avatar56.vue'
 
@@ -48,7 +48,7 @@
     export default {
         components: {
             Header, PreferredGames, StatsGames, Avatar36, Avatar56,
-            Title, Text18, Text12,
+            Title, TextBig, TextShallow,
         }
     }
 </script>

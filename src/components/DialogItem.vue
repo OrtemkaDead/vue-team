@@ -2,20 +2,20 @@
   <router-link to="/dialog" class="dialog">
     <DialogAvatar></DialogAvatar>
     <div class="dialog__text">
-      <Text16>Денис, допустим</Text16>
-      <div class="dialog__content"><Text14>вы: За моего отца!</Text14></div>
+      <TextMedium>Денис, допустим</TextMedium>
+      <div class="dialog__content"><TextSmall>вы: За моего отца!</TextSmall></div>
     </div>
   </router-link>
 </template>
 
 <script>
   import DialogAvatar from '@/components/avatar/DialogAvatar.vue'
-  import Text14 from '@/components/text/Text14.vue'
-  import Text16 from '@/components/text/Text16.vue'
+  import TextSmall from '@/components/text/TextSmall.vue'
+  import TextMedium from '@/components/text/TextMedium.vue'
 
   export default {
       components: {
-          DialogAvatar, Text14, Text16,
+          DialogAvatar, TextSmall, TextMedium,
       }
   }
 </script>

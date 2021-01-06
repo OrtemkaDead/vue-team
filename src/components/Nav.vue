@@ -38,17 +38,14 @@
 
     .router-link-active {
       .icon {
-        fill: #6476CC;
+        fill: $active-color;
       }
     }
   }
 
   .icon {
-    max-width: 24px;
-    max-height: 24px;
+    max-width: 30px;
+    max-height: 30px;
     fill: #fff;
-  }
-  .active {
-    fill: #6476CC;
   }
 </style>

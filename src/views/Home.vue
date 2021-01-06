@@ -13,7 +13,7 @@
 
       <WelcomeText>
         <template v-slot:suptitle>
-          <Text12>Привет, пользователь!</Text12>
+          <TextShallow>Привет, пользователь!</TextShallow>
         </template>
         <template v-slot:title>
           <Title>Время оценивать</Title>
@@ -22,7 +22,7 @@
 
        <Gamers></Gamers>
 
-      <Buttons></Buttons>
+      <ChoiceButtons></ChoiceButtons>
 
     </div>
 
@@ -35,15 +35,15 @@
     import WelcomeText from '@/components/WelcomeText.vue'
     import Avatar36 from '@/components/avatar/Avatar36.vue'
     import Title from '@/components/text/Title.vue'
-    import Text12 from '@/components/text/Text12.vue'
-    import Buttons from '@/components/Buttons.vue'
+    import TextShallow from '@/components/text/TextShallow.vue'
+    import ChoiceButtons from '@/components/ChoiceButtons.vue'
 
     //Icon
     import likeIcon from '@/assets/img/like-icon.svg'
 
     export default {
         components: {
-            Header, Gamers, WelcomeText, Avatar36, Title, Text12, Buttons,
+            Header, Gamers, WelcomeText, Avatar36, Title, TextShallow, ChoiceButtons,
 
             likeIcon,
         }
