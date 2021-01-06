@@ -1,12 +1,12 @@
 <template>
   <nav>
-    <router-link to="/" >
+    <router-link :to="{name: 'home'}">
       <home-icon class="icon" />
     </router-link>
-    <router-link to="/dialogs">
+    <router-link :to="{name: 'dialogs'}">
       <message-icon class="icon" />
     </router-link>
-    <router-link to="/profile">
+    <router-link :to="{name: 'profile'}">
       <user-icon class="icon" />
     </router-link>
   </nav>
@@ -35,6 +35,12 @@
     box-shadow: $main-shadow;
 
     object{pointer-events:none;}
+
+    .router-link-active {
+      .icon {
+        fill: #6476CC;
+      }
+    }
   }
 
   .icon {

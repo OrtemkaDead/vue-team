@@ -7,23 +7,28 @@ export default new Router({
     mode: "history",
     routes: [
         {
-            path: '/',
+            path: '/home',
+            name: 'home',
             component: () => import('./views/Home.vue')
         },
         {
             path: '/dialogs',
+            name: 'dialogs',
             component: () => import('./views/Dialogs.vue')
         },
         {
             path: '/profile',
+            name: 'profile',
             component: () => import('./views/Profile.vue')
         },
         {
             path: '/liked',
+            name: 'liked',
             component: () => import('./views/Liked.vue')
         },
         {
             path: '/dialog',
+            name: 'dialog',
             component: () => import('./views/Dialog.vue')
         },
     ]
