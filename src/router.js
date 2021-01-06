@@ -22,7 +22,7 @@ export default new Router({
             component: () => import('./views/Profile.vue')
         },
         {
-            path: '/liked',
+            path: '/home/liked',
             name: 'liked',
             component: () => import('./views/Liked.vue')
         },

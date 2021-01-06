@@ -2,7 +2,7 @@
   <div>
     <Header>
       <template v-slot:left>
-        <router-link to="/liked"><like-icon /></router-link>
+        <router-link :to="{name: 'liked'}"><like-icon /></router-link>
       </template>
       <template v-slot:right>
         <Avatar36></Avatar36>

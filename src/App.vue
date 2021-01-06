@@ -2,7 +2,7 @@
   <div id="app">
     <router-view />
 
-    <Nav></Nav>
+    <Nav v-if="!isDialogRoute"></Nav>
   </div>
 </template>
 
@@ -19,7 +19,13 @@
     components: {
         Home, Liked, Dialogs, Dialog, Profile,
         Nav,
-    }
+    },
+    computed: {
+      isDialogRoute() {
+        return this.$route.path === '/dialog';
+      }
+    },
+
   }
 </script>
 
