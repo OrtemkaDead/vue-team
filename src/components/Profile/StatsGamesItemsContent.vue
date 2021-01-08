@@ -9,3 +9,20 @@
 
   </div>
 </template>
+
+<style lang="scss" scoped>
+  .stats-games {
+    &__content {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+
+    &__text {
+      font-weight: 400;
+      margin-bottom: 12px;
+    }
+  }
+</style>

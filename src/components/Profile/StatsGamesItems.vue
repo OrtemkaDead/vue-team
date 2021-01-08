@@ -7,3 +7,13 @@
     <button class="profile-games__item" type="button" data-tab="#tab_5">Game</button>
   </HorizontalList>
 </template>
+
+<script>
+  import HorizontalList from '@/components/HorizontalList.vue'
+
+  export default {
+      components: {
+          HorizontalList,
+      }
+  }
+</script>
