@@ -29,7 +29,8 @@ export default new Router({
         {
             path: '/dialog',
             name: 'dialog',
-            component: () => import('./views/Dialog.vue')
+            component: () => import('./views/Dialog.vue'),
+            params: true
         },
     ]
 })
