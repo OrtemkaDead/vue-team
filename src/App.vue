@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <router-view />
+<!--    <router-view />-->
+    <Auth />
 
     <Nav v-if="!isDialogRoute"></Nav>
   </div>
@@ -13,12 +14,13 @@
   import Liked from '@/views/Liked.vue'
   import Dialog from '@/views/Dialog.vue'
   import Nav from '@/components/Nav.vue'
+  import Auth from '@/components/Auth.vue'
 
   export default {
     name: 'App',
     components: {
         Home, Liked, Dialogs, Dialog, Profile,
-        Nav,
+        Nav, Auth,
     },
     computed: {
       isDialogRoute() {

@@ -36,8 +36,8 @@
 
 <script>
     import Header from '@/components/Header.vue'
-    import PreferredGames from '@/components/Profile/PreferredGames.vue'
-    import StatsGames from '@/components/Profile/StatsGames.vue'
+    import PreferredGames from '@/components/profile/PreferredGames.vue'
+    import StatsGames from '@/components/profile/StatsGames.vue'
     import Title from '@/components/text/Title.vue'
     import TextBig from '@/components/text/TextBig.vue'
     import TextShallow from '@/components/text/TextShallow.vue'
