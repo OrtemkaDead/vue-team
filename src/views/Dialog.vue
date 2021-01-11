@@ -19,6 +19,8 @@
 
       <div class="message__body">
 
+        <Message></Message>
+
         <div class="message__sms message__sms--from-them">
           <div class="message__content">Какой-то большой текст ОЧень большой текст</div>
           <div class="message__time">00:00</div>
@@ -52,19 +54,21 @@
     import Header from '@/components/Header.vue'
     import BackArr from '@/components/BackArr.vue'
     import Avatar36 from '@/components/avatar/Avatar36.vue'
+    import Message from '@/components/chat/Message.vue'
+
     //Icon
     import messageDispatchIcon from '@/assets/img/message-dispatch-icon.svg'
 
     export default {
         components: {
-            Header, BackArr, Avatar36,
+            Header, BackArr, Avatar36, Message,
 
             messageDispatchIcon,
         }
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .content {
     @include pos-fixed($head-h, 0, unset);
     display: flex;
@@ -132,11 +136,6 @@
       display: flex;
       align-items: flex-end;
       margin-bottom: 10px;
-
-      &--from-me {
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
-      }
     }
 
     &__input-form {

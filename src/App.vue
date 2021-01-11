@@ -1,30 +1,24 @@
 <template>
   <div id="app">
-<!--    <router-view />-->
-    <Auth />
+    <router-view />
 
-    <Nav v-if="!isDialogRoute"></Nav>
+    <Nav v-if="!isNotNavRoute"></Nav>
   </div>
 </template>
 
 <script>
-  import Home from '@/views/Home.vue'
-  import Dialogs from '@/views/Dialogs.vue'
-  import Profile from '@/views/Profile.vue'
-  import Liked from '@/views/Liked.vue'
-  import Dialog from '@/views/Dialog.vue'
   import Nav from '@/components/Nav.vue'
-  import Auth from '@/components/Auth.vue'
 
   export default {
     name: 'App',
     components: {
-        Home, Liked, Dialogs, Dialog, Profile,
-        Nav, Auth,
+        Nav,
     },
     computed: {
-      isDialogRoute() {
-        return this.$route.path === '/dialog';
+      isNotNavRoute() {
+        if (this.$route.path === '/dialog' /* || this.$route.path === '/dialogs' */ ) {
+          return true
+        }
       }
     },
 

@@ -20,7 +20,7 @@
         </template>
       </WelcomeText>
 
-       <Gamers></Gamers>
+       <Gamer></Gamer>
 
       <div class="buttons">
         <RoundButton><close-icon class="icon"/></RoundButton>
@@ -35,7 +35,7 @@
 
 <script>
     import Header from '@/components/Header.vue'
-    import Gamers from '@/components/Gamers.vue'
+    import Gamer from '@/components/Gamer.vue'
     import WelcomeText from '@/components/WelcomeText.vue'
     import Avatar36 from '@/components/avatar/Avatar36.vue'
     import Title from '@/components/text/Title.vue'
@@ -50,7 +50,7 @@
 
     export default {
         components: {
-            Header, Gamers, WelcomeText, Avatar36, Title, TextShallow, RoundButton,
+            Header, Gamer, WelcomeText, Avatar36, Title, TextShallow, RoundButton,
 
             likeIcon, closeIcon, gamepadIcon,
         }

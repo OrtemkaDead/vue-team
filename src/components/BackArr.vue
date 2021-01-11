@@ -1,5 +1,8 @@
 <template>
-  <div class="back-arr" @click="goBack"><span></span></div>
+  <div class="wrap" @click="goBack">
+    <div class="back-arr"><span></span></div>
+  </div>
+
 </template>
 
 <script>
@@ -13,6 +16,9 @@
 </script>
 
 <style lang="scss" scoped>
+  .wrap {
+    padding: 15px 0;
+  }
   .back-arr {
     display: block;
     width: 18px;
