@@ -1,5 +1,7 @@
 <template>
-  <button class="profile-games__item" type="button" data-tab="#tab_2"><slot></slot></button>
+  <button class="profile-games__item">
+    <slot></slot>
+  </button>
 </template>
 
 <style lang="scss" scoped>

@@ -17,25 +17,11 @@
 
     <div class="content-chat">
 
-      <div class="message__body">
-
-        <Message></Message>
-
-        <div class="message__sms message__sms--from-them">
-          <div class="message__content">Какой-то большой текст ОЧень большой текст</div>
-          <div class="message__time">00:00</div>
-        </div>
-
-        <div class="message__sms message__sms--from-me">
-          <div class="message__content">Texxtrrrrrrrrrrrrr</div>
-          <div class="message__time">00:00</div>
-        </div>
-
-        <div class="message__sms message__sms--from-them">
-          <div class="message__content">Textt</div>
-          <div class="message__time">00:00</div>
-        </div>
-
+      <div class="message__body"
+           v-for="message in messages"
+           :key="message.id"
+           :message="message"
+      >
       </div>
 
       <div class="message__input-form">
@@ -113,29 +99,6 @@
   .message {
     &__body {
       overflow-y: auto;
-    }
-
-    &__content { //Контент самого сообщения
-      max-width: 60%;
-      padding: 8px 16px;
-
-      font-size: 13px;
-      font-weight: 400;
-
-      background: $content-bg;
-      border-radius: 16px;
-    }
-
-    &__time {
-      font-size: 9px;
-      font-weight: 300;
-      opacity: .5;
-    }
-
-    &__sms {
-      display: flex;
-      align-items: flex-end;
-      margin-bottom: 10px;
     }
 
     &__input-form {

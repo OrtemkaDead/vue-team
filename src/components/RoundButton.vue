@@ -4,7 +4,7 @@
   </button>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .circle-btn {
     @include flexing(center);
     width: 40px;
