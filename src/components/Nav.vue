@@ -3,7 +3,7 @@
     <router-link :to="{name: 'home'}">
       <home-icon class="icon" />
     </router-link>
-    <router-link :to="{name: 'dialogs'}">
+    <router-link :to="{name: 'chats'}">
       <message-icon class="icon" />
     </router-link>
     <router-link :to="{name: 'profile'}">
@@ -17,6 +17,7 @@
     import homeIcon from '@/assets/img/home-icon.svg'
     import messageIcon from '@/assets/img/message-icon.svg'
     import userIcon from '@/assets/img/user-icon.svg'
+
     export default {
         components: {
             homeIcon, messageIcon, userIcon,

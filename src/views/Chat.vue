@@ -15,7 +15,7 @@
       </template>
     </Header>
 
-    <div class="content">
+    <div class="content-chat">
 
       <div class="message__body">
 
@@ -69,7 +69,7 @@
 </script>
 
 <style lang="scss">
-  .content {
+  .content-chat {
     @include pos-fixed($head-h, 0, unset);
     display: flex;
     flex-direction: column;

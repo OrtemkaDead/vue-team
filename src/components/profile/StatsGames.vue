@@ -5,9 +5,6 @@
 
     <HorizontalList>
       <StatsGamesItem>Game1</StatsGamesItem>
-      <StatsGamesItem>Game2</StatsGamesItem>
-      <StatsGamesItem>Game3</StatsGamesItem>
-      <StatsGamesItem>Game4</StatsGamesItem>
     </HorizontalList>
 
     <StatsGamesItemContent />

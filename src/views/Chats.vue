@@ -11,7 +11,7 @@
 
     <div class="content">
 
-      <DialogItem></DialogItem>
+      <ChatItem></ChatItem>
 
     </div>
   </div>
@@ -20,13 +20,13 @@
 
 <script>
   import Header from '@/components/Header.vue'
-  import DialogItem from '@/components/DialogItem.vue'
+  import ChatItem from '@/components/chat/ChatItem.vue'
   import Title from '@/components/text/Title.vue'
   import Avatar36 from '@/components/avatar/Avatar36.vue'
 
   export default {
     components: {
-      Header, DialogItem, Avatar36, Title,
+      Header, ChatItem, Avatar36, Title,
     }
   }
 </script>

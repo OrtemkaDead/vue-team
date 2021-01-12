@@ -12,9 +12,9 @@ export default new Router({
             component: () => import('./views/Home.vue')
         },
         {
-            path: '/dialogs',
-            name: 'dialogs',
-            component: () => import('./views/Dialogs.vue')
+            path: '/chats',
+            name: 'chats',
+            component: () => import('./views/Chats.vue')
         },
         {
             path: '/profile',
@@ -27,9 +27,9 @@ export default new Router({
             component: () => import('./views/Liked.vue')
         },
         {
-            path: '/dialog',
-            name: 'dialog',
-            component: () => import('./views/Dialog.vue')
+            path: '/chat',
+            name: 'chat',
+            component: () => import('./views/Chat.vue')
         },
     ]
 })

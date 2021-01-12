@@ -1,9 +1,9 @@
 <template>
-  <router-link to="/dialog" class="dialog">
+  <router-link :to="{name: 'chat'}" class="chat">
     <DialogAvatar></DialogAvatar>
-    <div class="dialog__text">
+    <div class="chat__text">
       <TextMedium>Денис, допустим</TextMedium>
-      <div class="dialog__content"><TextSmall>вы: За моего отца!</TextSmall></div>
+      <div class="chat__content"><TextSmall>вы: За моего отца!</TextSmall></div>
     </div>
   </router-link>
 </template>
@@ -21,7 +21,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .dialog {
+  .chat {
     @include flexing(unset);
     margin-bottom: 16px;
 

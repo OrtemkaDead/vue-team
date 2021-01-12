@@ -24,9 +24,9 @@
 
       <button class="profile-btn"><a href="#">Редактировать</a></button>
 
-      <PreferredGames></PreferredGames>
+      <PreferredGames />
 
-      <StatsGames></StatsGames>
+      <StatsGames />
 
 
     </div>
