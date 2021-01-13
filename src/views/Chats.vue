@@ -12,6 +12,8 @@
     <div class="content">
 
       <ChatItem></ChatItem>
+      <ChatItem></ChatItem>
+      <ChatItem></ChatItem>
 
     </div>
   </div>
@@ -33,21 +35,8 @@
 
 <style lang="scss" scoped>
   .content {
-    @include pos-fixed($head-h, $nav-h, unset);
+    @include pos-fixed($head-h - 26, $nav-h, unset);
     overflow-y: auto;
-    margin: 0 $main-p;
-    padding: 16px;
-
-    border-radius: 16px;
-    background: #262A35;
-    box-shadow: $main-shadow;
-
-    &::-webkit-scrollbar {
-      width: 3px;
-    }
-    &::-webkit-scrollbar-thumb {
-      background: linear-gradient(to bottom, #9b51e0, #6476cc);
-      border-radius: 10px;
-    }
+    padding: 26px 16px;
   }
 </style>

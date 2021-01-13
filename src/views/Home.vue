@@ -73,10 +73,11 @@
     right: 0;
     height: 100%;
 
-    background: radial-gradient(circle at 28px -226px, rgba(62, 19, 186, 0.7) 25%, #21114f 35%, #121212 48%);
-    //background: linear-gradient(156deg, rgba(62,19,186,1) -3%, rgba(18,18,18,1) 30%);
-    //background: linear-gradient(159deg, rgba(62, 19, 186, .7) 5%, rgb(33, 17, 79) 16%, rgba(18, 18, 18, 1) 31%);
+    //background: radial-gradient(circle at 28px -226px, rgba(62, 19, 186, 0.7) 25%, #21114f 35%, #121212 48%);
+    background: radial-gradient(64.93% 33.36% at 2.67% 1.72%, #2D117B 0%, rgba(59, 32, 147, 0.822917) 27.6%, rgba(123, 97, 255, 0) 100%);
+
   }
+
   .content {
     @include pos-fixed($head-h, $nav-h, unset);
     overflow-y: hidden;
@@ -89,7 +90,7 @@
 
   .buttons {
     @include flexing(space-around);
-    width: 250px;
+    width: 210px;
     margin: 0 auto;
 
     .big {

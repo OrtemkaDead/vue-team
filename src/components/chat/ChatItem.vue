@@ -1,29 +1,54 @@
 <template>
-  <router-link :to="{name: 'chat'}" class="chat">
-    <DialogAvatar></DialogAvatar>
-    <div class="chat__text">
-      <TextMedium>Денис, допустим</TextMedium>
-      <div class="chat__content"><TextSmall>вы: За моего отца!</TextSmall></div>
-    </div>
-  </router-link>
+  <div>
+    <router-link :to="{name: 'chat'}" class="chat new-message">
+      <ChatAvatar></ChatAvatar>
+      <div class="chat__text">
+        <TextMedium>
+          <slot name="name">Денис, допустим</slot>
+        </TextMedium>
+        <div class="chat__content">
+          <TextSmall>
+            <slot name="message">Новое сообщение</slot>
+          </TextSmall>
+        </div>
+      </div>
+    </router-link>
+    <router-link :to="{name: 'chat'}" class="chat">
+      <ChatAvatar></ChatAvatar>
+      <div class="chat__text">
+        <TextMedium>
+          <slot name="name">Денис, допустим</slot>
+        </TextMedium>
+        <div class="chat__content">
+          <TextSmall>
+            <slot name="message">вы: Привет</slot>
+          </TextSmall>
+        </div>
+      </div>
+    </router-link>
+  </div>
 </template>
 
 <script>
-  import DialogAvatar from '@/components/avatar/DialogAvatar.vue'
-  import TextSmall from '@/components/text/TextSmall.vue'
-  import TextMedium from '@/components/text/TextMedium.vue'
+    import ChatAvatar from '@/components/avatar/ChatAvatar.vue'
+    import TextSmall from '@/components/text/TextSmall.vue'
+    import TextMedium from '@/components/text/TextMedium.vue'
 
-  export default {
-      components: {
-          DialogAvatar, TextSmall, TextMedium,
-      }
-  }
+    export default {
+        components: {
+            ChatAvatar, TextSmall, TextMedium,
+        }
+    }
 </script>
 
 <style lang="scss" scoped>
   .chat {
     @include flexing(unset);
-    margin-bottom: 16px;
+    margin-bottom: 12px;
+    padding: 16px;
+
+    background: $content-bg;
+    border-radius: 16px;
 
     &__text {
       white-space: nowrap;
@@ -35,8 +60,23 @@
       overflow: hidden;
     }
 
-    &:last-child {
-      margin-bottom: 0;
+    /*&:last-child {*/
+    /*  margin-bottom: 0;*/
+    /*}*/
+  }
+
+  .new-message {
+    position: relative;
+    box-shadow: 0 0 30px 0 rgba(123, 97, 255, .25);
+
+    &:after {
+      @include pseudo;
+      width: 8px;
+      height: 8px;
+      right: 16px;
+
+      background: #6A55D6;
+      border-radius: 50%;
     }
   }
 </style>

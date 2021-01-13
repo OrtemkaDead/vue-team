@@ -1,13 +1,13 @@
 <template>
   <nav>
     <router-link :to="{name: 'home'}">
-      <home-icon class="icon" />
+      <home-icon class="icon icon-home" />
     </router-link>
     <router-link :to="{name: 'chats'}">
-      <message-icon class="icon" />
+      <message-icon class="icon icon-chats" />
     </router-link>
     <router-link :to="{name: 'profile'}">
-      <user-icon class="icon" />
+      <user-icon class="icon icon-profile" />
     </router-link>
   </nav>
 </template>
@@ -27,19 +27,22 @@
 
 <style lang="scss">
   nav {
-    @include pos-fixed(unset, 0, $nav-h - 40px);
+    @include pos-fixed(unset, 0, $nav-h - 5);
     @include flexing(space-around);
-    margin: $main-p;
 
-    border-radius: 16px;
-    background: $content-bg;
-    box-shadow: $main-shadow;
+    background: #191A1F;
 
     object{pointer-events:none;}
 
     .router-link-active {
-      .icon {
+      .icon-home {
         fill: $active-color;
+      }
+      .icon-chats {
+        fill: #e1bf3a;
+      }
+      .icon-profile {
+        fill: #f26470;
       }
     }
   }
